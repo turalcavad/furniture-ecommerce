@@ -1,7 +1,15 @@
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './layouts';
+import { Routes } from './routes';
 
-function App() {
-  return <div>hey</div>;
-}
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Layout>
+        <Routes />
+      </Layout>
+    </BrowserRouter>
+  );
+};
 
 export default App;
